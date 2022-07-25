@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(73, 119, 61);
+}
+
+h1 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 50px;
+}
+
+.boxOne,
+.boxTwo,
+.boxThree {
+    float: left;
+    padding: 12px;
+}
+  
+.cont {
+    background-color:dimgrey;
+    border: 1px black solid;
+    padding: 20px;
+}
+  
+.chicken {
+    background-color: hsl(352, 100%, 50%);
+    color: black;
+    text-align: center;
+    border: 1px black solid;
+    margin-top: 0px;
+    padding-top: 5px;
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+  
+.beef {
+    background-color: #f2ff00;
+    color: black;
+    text-align: center;
+    border: 1px black solid;
+    margin-top: 0px;
+    padding-top: 5px;
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+  
+.sushi {
+    background-color: #00ff2f;
+    color: black;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    padding-top: 5px;
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+  
+@media only screen and (min-width: 992px) {
+    .boxOne,
+    .boxTwo,
+    .boxThree {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .boxOne,
+    .boxTwo,
+    .boxThree {
+    display: inline-block;
+  }
+  .boxTwo,
+  .boxOne {
+    width: 50%;
+  }
+  .boxThree {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .boxOne,
+    .boxTwo,
+    .boxThree {
+    display: inline-block;
+    width: 100%;
+  }
+}
